@@ -1,3 +1,4 @@
+# Write your MySQL query statement below
 select ifnull((select num
 from MyNumbers
 group by num

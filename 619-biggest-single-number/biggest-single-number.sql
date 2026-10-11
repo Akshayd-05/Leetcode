@@ -1,7 +1,6 @@
-# Write your MySQL query statement below
-select ifnull((select num
+select (select num
 from MyNumbers
 group by num
-having count(*) = 1
+having count(num) = 1
 order by num DESC
-limit 1), null) as num;
+limit 1) as num;
